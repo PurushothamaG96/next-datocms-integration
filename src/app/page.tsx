@@ -8,7 +8,6 @@ export const revalidate = 10
 
 export default async function Home() {
   const { isEnabled } = draftMode();
-  console.log(isEnabled)
   const {allArticles}= await cmsdata({query: PAGE_CONTENT_QUERY, includeDrafts:isEnabled});
   // console.log(data)
   if (!allArticles.length) return <h1>Not found</h1>;
