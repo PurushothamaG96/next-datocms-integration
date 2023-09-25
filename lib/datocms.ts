@@ -8,6 +8,6 @@ export default async function cmsdata({query,includeDrafts=false }:Arg) {
       authorization: "Bearer " + process.env.DATOCMS_API_KEY,
     },
   });
-  const course:HomeQuery = await grapgqlClient.request(query);
+  const course: any = await grapgqlClient.request(query);
   return course;
 }

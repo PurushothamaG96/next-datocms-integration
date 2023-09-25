@@ -56,4 +56,9 @@ type Arg = {
   includeDrafts?: boolean
 }
 
+type FontQueryType = {
+  goggleFont : {
+    font: "inter" | "roboto"
+  }
+}
 
